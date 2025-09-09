@@ -14,7 +14,7 @@ let handler = async (m, { conn }) => {
    })
 
    let totalUsers = uniqueUsers.size
-   let txt = '*`🕸 Total Sub-Bots`*' + ` » *${totalUsers || 0}*`
+   let txt = '*🕸 Total Sub-Bots*' + ` » *${totalUsers || 0}*`
 
    await conn.reply(m.chat, txt, m, rcanal)
 }
