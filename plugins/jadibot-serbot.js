@@ -47,7 +47,7 @@ sanJBOptions.fromCommand = true
 sanJadiBot(sanJBOptions, text)
 } 
 handler.help = ['code', 'qr']
-handler.tags = ['socket']
+handler.tags = ['jadibot']
 handler.command = ['code', 'qr']
 export default handler 
 
