@@ -235,7 +235,6 @@ globalThis.conn.ws.close()
 } catch { }
 conn.ev.removeAllListeners()
 globalThis.conn = makeWASocket(connectionOptions, {chats: oldChats})
-global.lidResolver = new LidResolver(global.conn)
 isInit = true
 }
 if (!isInit) {
@@ -334,7 +333,6 @@ const [ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, find] = test;
 const s = global.support = {ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, find};
 Object.freeze(globalThis.support);
 }
-
 
 // Tmp
 setInterval(async () => {
