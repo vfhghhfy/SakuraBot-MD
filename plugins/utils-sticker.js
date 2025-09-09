@@ -33,7 +33,7 @@ let handler = async (m, { conn }) => {
      else if (/image/g.test(mime)) out = await uploadImage(media)
      else if (/video/g.test(mime)) out = await uploadFile(media)
     if (typeof out !== 'string') out = await uploadImage(media)
-    stiker = await sticker(media, aout, text1, text2)
+    stiker = await sticker(media, out, text1, text2)
     const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m)
     await new Promise(resolve => setTimeout(resolve, 2000));
     await fs.unlinkSync(stickerPath);
