@@ -177,9 +177,42 @@ fs.rmdirSync(pathSanJadiBot, { recursive: true })
 if (globalThis.db.data == null) loadDatabase()
 if (connection == `open`) {
 if (!globalThis.db.data?.users) loadDatabase()
+const method = state.creds?.pairingCode ? 'Código de 8 dígitos' : 'Código QR'
+let isWABusiness = sock.authState?.creds?.platform === 'smba' || sock.authState?.creds?.platform === 'smbi'
+const waType = isWABusiness ? 'Business' : 'Messenger'
+const userName = sock.authState.creds.me.name || global.db.data.users[m.sender].name || m.pushName || 'Anónimo'
+
+let chtxt = ` ֯　ׅ🫗ֶ֟ㅤ *Usuario ›* ${userName}
+
+ ׄ 🎋 ׅ り *Método de conexión ›* ${method}
+ ׄ 🌱 ׅ り *Browser ›* Firefox (Windows)
+ ׄ 🍁 ׅ り *WhatsApp ›* ${waType}
+ ׄ 🌾 ׅ り *Visita ›* api.stellarwa.xyz
+ ׄ 🌿 ׅ り *Bot ›* ${wm}
+ ׄ 🥗 ׅ り *Versión del bot ›* ^0.0.9
+
+> *¡Conviértete en un sub-bot ahora, únete al grupo oficial!*\nhttps://stellarwa.xyz/sakura`
+
+let ppch = await sock.profilePictureUrl(m.sender, 'image').catch(_ => "https://stellarwa.xyz/files/1757206448404.jpeg")
 await joinChannels(sock)
 const isCode = /^(qr|code)$/.test(command)
-if (m && conn && isCode && commandFlags[m.sender]) {
+if (m && conn && chtxt && ppch && isCode && commandFlags[m.sender]) {
+ setTimeout(async () => {
+try {
+if (global.conn?.sendMessage) {
+await global.conn.sendMessage(my.ch5, { text: chtxt,
+contextInfo: { 
+externalAdReply: {
+title: "🕸 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗜𝗢́𝗡 🕸",
+body: '🐼 ¡Nuevo sub-bot encontrado!',
+thumbnailUrl: ppch,
+sourceUrl: redes,
+mediaType: 2,
+showAdAttribution: false,
+renderLargerThumbnail: false
+}}}, { quoted: null }) 
+}} catch (e) {
+}}, 9000)
 await conn.sendMessage(m.chat, {text: `🕸 Vinculaste con éxito un nuevo *Sub Bot*` }, { quoted: m })
 delete commandFlags[m.sender]
 }
