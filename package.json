@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/DevAlexJs/SakuraBot-MD#readme",
   "dependencies": {
-    "@whiskeysockets/baileys": "github:gatanina-lid/baileys",
+    "@whiskeysockets/baileys": "github:gatanina-li/baileys",
     "@bochilteam/scraper": "^4.2.4",
     "@xct007/frieren-scraper": "^0.0.2",
     "acrcloud": "^1.4.0",
