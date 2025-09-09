@@ -41,7 +41,7 @@ ${dev}`;
     }
 
     if (['play', 'mp3', 'playaudio', 'ytmp3'].includes(command)) {
-      const response = await fetch(`${api.url}/dow/ytmp3?url=${encodeURIComponent(url)}&apikey=${api.key}`);
+      const response = await fetch(`${api.url}/dow/ytmp3v2?url=${encodeURIComponent(url)}&apikey=${api.key}`);
       const result = await response.json();
 
       if (!result.status || !result.data) return m.reply('🐼 Error al descargar el audio.');
@@ -59,7 +59,7 @@ ${dev}`;
         { quoted: m }
       );
     } else if (['play2', 'mp4', 'playvideo', 'ytmp4'].includes(command)) {
-      const response = await fetch(`${api.url}/dow/ytmp4?url=${url}&apikey=${api.key}`);
+      const response = await fetch(`${api.url}/dow/ytmp4v2?url=${url}&apikey=${api.key}`);
       const result = await response.json();
 
       if (!result.status || !result.data) return m.reply('🐼 Error al descargar el video.');
