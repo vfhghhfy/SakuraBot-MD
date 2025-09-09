@@ -81,13 +81,12 @@ const welcomeMessage = formatText(chat.sWelcome || `╭┈──̇─̇─̇─�
     }
   };
 
-  if (chat.welcome) {
-    const caption = m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD
-      ? welcomeMessage
-      : m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE
-      ? byeMessage
-      : leaveMessage;
-
+        if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
+    let caption = byeMessage;
+    await conn.sendMessage(m.chat, { image: { url: ppUrl }, caption, ...fakeContext });
+  }
+        if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE) {
+    let caption = welcomeMessage;
     await conn.sendMessage(m.chat, { image: { url: ppUrl }, caption, ...fakeContext });
   }
 }
