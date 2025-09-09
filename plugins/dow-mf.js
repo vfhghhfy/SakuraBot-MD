@@ -55,7 +55,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       `📁 *Tipo:* ${tipo}\n\n` +
       `🔗 *Enlace directo:* ${dl}`;
 
-    await conn.sendMessage(m.chat, { text: info }, { quoted: m });
+    await conn.sendMessage(m.chat, { text: info, ...fake }, { quoted: m });
 
     if (!/GB|gb/.test(peso)) {
       await conn.sendMessage(
@@ -74,8 +74,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
 
   } catch (error) {
-    console.error(error);
-    m.reply(`⚠️ *Error:* ${error.message}`);
+    // console.error(error);
+    m.reply('☁️ No se puede realizar la descarga. Intenta nuevamente.')
   }
 };
 
