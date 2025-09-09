@@ -81,6 +81,11 @@ const welcomeMessage = formatText(chat.sWelcome || `╭┈──̇─̇─̇─�
     }
   };
 
+        if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
+    let caption = welcomeMessage;
+    await conn.sendMessage(m.chat, { image: { url: ppUrl }, caption, ...fakeContext });
+  }
+
         if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
     let caption = byeMessage;
     await conn.sendMessage(m.chat, { image: { url: ppUrl }, caption, ...fakeContext });
