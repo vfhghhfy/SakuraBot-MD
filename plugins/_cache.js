@@ -14,7 +14,7 @@ handler.before = async function (m, { conn }) {
     } else {
     }
 
-   return true
+  // return true
 }
 
 export default handler
