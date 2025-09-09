@@ -15,7 +15,7 @@ global.wm = '🌿 𝙎𝙖𝙠𝙪𝙧𝙖𝘽𝙤𝙩-𝙈𝘿'
 global.dev = '🕸 Powered By DevAlexJs.'
 
 global.banner = 'https://stellarwa.xyz/files/1757377941018.jpeg'
-glonal.icon = 'https://stellarwa.xyz/files/1757378468505.jpeg'
+global.icon = 'https://stellarwa.xyz/files/1757378468505.jpeg'
 global.currency = 'CryptoCoins'
 global.sessions = 'sessions/session-bot'
 global.jadi = 'sessions/session-sub'
