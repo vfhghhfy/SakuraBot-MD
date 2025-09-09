@@ -69,6 +69,20 @@ const separator = match ? match[0] : '';
       });
     }
 
+  const canales = Object.entries(global.my)
+  .reduce((acc, [key, value]) => {
+    if (key.startsWith('ch')) {
+      const index = key.slice(2)
+      const nombre = global.my[`name${index}`]
+      if (nombre) {
+        acc.push({ id: value, nombre })
+      }
+    }
+    return acc
+  }, [])
+
+const channelRD = canales[Math.floor(Math.random() * canales.length)]
+
  await conn.sendMessage(m.chat, {
 document: await (await fetch(banner)).buffer(),
 fileName: '^0.0.9 | Lastest 🌱',
@@ -80,12 +94,12 @@ contextInfo: {
 forwardingScore: 0,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterJid: '',
-serverMessageId: null,
-newsletterName: ''
+newsletterJid: channelRD.id,
+serverMessageId: '0',
+newsletterName: channelRD.nombre
 },
 externalAdReply: {
-title: wm,
+title: botname,
 body: dev, 
 showAdAttribution: false,
 thumbnailUrl: banner,
@@ -98,7 +112,7 @@ sourceUrl: null,
 }}, { quoted: m })
 
   } catch (e) {
-    await m.reply(`🕸 Error`)
+    await m.reply(`🕸 Error [${e}]`)
   }
 }
 
