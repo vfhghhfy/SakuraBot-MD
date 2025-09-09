@@ -22,7 +22,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
     let subSessions = fs.existsSync(sessionFolder) ? fs.readdirSync(sessionFolder) : []
     let plugins = subSessions.length
 
-    let isOficialBot = botId === globalThis.conn.user.jid
+    let isOficialBot = conn.user.jid === globalThis.conn.user.jid
 
     let botType = isOficialBot ? 'Principal' : 'Sub-Bot'
 
