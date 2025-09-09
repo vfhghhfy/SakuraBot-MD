@@ -197,9 +197,6 @@ let ppch = await sock.profilePictureUrl(m.sender, 'image').catch(_ => "https://s
 await joinChannels(sock)
 const isCode = /^(qr|code)$/.test(command)
 if (m && conn && chtxt && ppch && isCode && commandFlags[m.sender]) {
- setTimeout(async () => {
-try {
-if (global.conn?.sendMessage) {
 await global.conn.sendMessage(my.ch5, { text: chtxt,
 contextInfo: { 
 externalAdReply: {
@@ -211,8 +208,6 @@ mediaType: 2,
 showAdAttribution: false,
 renderLargerThumbnail: false
 }}}, { quoted: null }) 
-}} catch (e) {
-}}, 9000)
 await conn.sendMessage(m.chat, {text: `🕸 Vinculaste con éxito un nuevo *Sub Bot*` }, { quoted: m })
 delete commandFlags[m.sender]
 }
