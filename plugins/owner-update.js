@@ -37,7 +37,7 @@ let handler = async (m, { conn }) => {
     if (stdout.includes('Already up to date.')) {
       msg = '🫟 *Estado:* Todo está actualizado';
     } else {
-      msg = `✅ *Actualización completada*\n\n📦 ${stdout}`;
+      msg = `🕸 Todo fué actualizado correctamente.`;
     }
 
     conn.sendMessage(m.chat, { text: msg }, { quoted: m });
