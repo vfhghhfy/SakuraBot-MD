@@ -1,4 +1,4 @@
-import { WAMessageStubType } from '@whiskeysockets/baileys';
+/*import { WAMessageStubType } from '@whiskeysockets/baileys';
 import fetch from 'node-fetch';
 import { createCanvas, loadImage, registerFont } from 'canvas';
 
@@ -128,4 +128,4 @@ export async function before(m, { conn, participants, groupMetadata }) {
         if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
            await conn.sendMessage(m.chat, { image: img, caption: leaveMessage, ...fakeContext });
         }
-}
+}*/
