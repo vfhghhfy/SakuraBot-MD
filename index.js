@@ -38,7 +38,7 @@ say('SakuraBot', {
   align: 'left',
   gradient: ['green', 'white']
 })
-say('Made With Alex', {
+say('Powered By Night Light', {
   font: 'console',
   align: 'center',
   colors: ['cyan', 'magenta', 'yellow']
