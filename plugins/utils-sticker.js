@@ -11,17 +11,14 @@ let handler = async (m, { conn }) => {
 
   if (/image/.test(mime)) {
     const media = await quoted.download();
-    const stickerPath = await conn.sendImageAsSticker(m.chat, media, m, {
-      packname,
-      author,
-    });
+    const stickerPath = conn.sendFile(m.chat, media, 'sticker.webp', '', m)
     await fs.unlinkSync(stickerPath);
   } else if (/video/.test(mime)) {
     if ((quoted.msg || quoted).seconds > 20) {
       return m.reply('🫗 El video no puede ser muy largo. Máximo 20 segundos.');
     }
     const media = await quoted.download();
-    const stickerPath = await conn.sendVideoAsSticker(m.chat, media, m, {
+    const stickerPath = conn.sendFile(m.chat, media, 'sticker.webp', '', m) // await conn.sendVideoAsSticker(m.chat, media, m, {
       packname,
       author,
     });
