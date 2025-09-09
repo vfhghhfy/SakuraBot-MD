@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
 
     let tiempo2 = moment.tz('America/Bogota').format('hh:mm A')
 
-    let sessionFolder = './src/plugins'
+    let sessionFolder = './plugins'
     let subSessions = fs.existsSync(sessionFolder) ? fs.readdirSync(sessionFolder) : []
     let plugins = subSessions.length
 
