@@ -6,19 +6,21 @@ let handler = async (m, { conn }) => {
 
   const user = global.db.data.users[m.sender];
   const name = user.name;
-  const packname = `S'ᴛᴇʟʟᴀʀ 🧠 WᴀBᴏᴛ`;
-  const author = `@${name}`;
+  const text1 = `S'ᴛᴇʟʟᴀʀ 🧠 WᴀBᴏᴛ`;
+  const text2 = `@${name}`;
 
   if (/image/.test(mime)) {
     const media = await quoted.download();
-    const stickerPath = conn.sendFile(m.chat, media, 'sticker.webp', '', m)
+    let stiker = await sticker(media, false, text1, text2)
+    const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m)
     await fs.unlinkSync(stickerPath);
   } else if (/video/.test(mime)) {
     if ((quoted.msg || quoted).seconds > 20) {
       return m.reply('🫗 El video no puede ser muy largo. Máximo 20 segundos.');
     }
     const media = await quoted.download();
-    const stickerPath = conn.sendFile(m.chat, media, 'sticker.webp', '', m) // await conn.sendVideoAsSticker(m.chat, media, m, {
+    let stiker = await sticker(media, false, text1, text2)
+    const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m) // await conn.sendVideoAsSticker(m.chat, media, m, {
       packname,
       author,
     });
