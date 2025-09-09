@@ -20,10 +20,7 @@ let handler = async (m, { conn }) => {
     }
     const media = await quoted.download();
     let stiker = await sticker(media, false, text1, text2)
-    const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m) // await conn.sendVideoAsSticker(m.chat, media, m, {
-      packname,
-      author,
-    });
+    const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m)
     await new Promise(resolve => setTimeout(resolve, 2000));
     await fs.unlinkSync(stickerPath);
   } else {
