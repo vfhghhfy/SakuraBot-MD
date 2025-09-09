@@ -1,52 +1,46 @@
-import fs from 'fs';
-import path from 'path';
-import { exec } from 'child_process';
+import { execSync } from 'child_process'
 
-function reloadCommands(dir = path.join(__dirname, '..')) {
-  const commandsMap = new Map();
+var handler = async (m, { conn, text }) => {
 
-  function readCommands(folder) {
-    const files = fs.readdirSync(folder);
-    for (const file of files) {
-      const fullPath = path.join(folder, file);
-      if (fs.lstatSync(fullPath).isDirectory()) {
-        readCommands(fullPath);
-      } else if (file.endsWith('.js')) {
-        delete require.cache[require.resolve(fullPath)];
-        const cmd = require(fullPath);
-        if (cmd.command) {
-          for (const c of cmd.command) {
-            commandsMap.set(c, cmd);
-          }
-        }
-      }
-    }
-  }
+try {
 
-  readCommands(dir);
-  global.comandos = commandsMap;
+const stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''));
+let messager = stdout.toString()
+
+if (messager.includes('🕸 Ya estoy actualizada.')) messager = '🕸 Ya estoy actualizada a la última versión.'
+
+if (messager.includes('🕸 Actualizando.')) messager = '🕸 Procesando, espere un momento mientras me actualizo.\n\n' + stdout.toString()
+conn.reply(m.chat, messager, m)
+
+} catch { 
+try {
+
+const status = execSync('git status --porcelain')
+
+if (status.length > 0) {
+const conflictedFiles = status.toString().split('\n').filter(line => line.trim() !== '').map(line => {
+if (line.includes('.npm/') || line.includes('.cache/') || line.includes('tmp/') || line.includes('datos.json') || line.includes('database.json') || line.includes('sessions/') || line.includes('npm-debug.log')) {
+return null
+}
+return '*→ ' + line.slice(3) + '*'}).filter(Boolean)
+if (conflictedFiles.length > 0) {
+const errorMessage = `🕸 No se puede actualizar.`
+await conn.reply(m.chat, errorMessage, m)
+}
+}
+} catch (error) {
+console.error(error)
+let errorMessage2 = '🐼 Ocurrió un error inesperado.'
+if (error.message) {
+errorMessage2 += '\n🐼 Mensaje de error: ' + error.message;
+}
+await conn.reply(m.chat, errorMessage2, m)
+}
 }
 
-let handler = async (m, { conn }) => {
-  const baseDir = path.join(__dirname, '..');
+}
 
-  exec('git pull', (error, stdout, stderr) => {
-    reloadCommands(baseDir);
+handler.command = ['update', 'actualizar']
+handler.owner = true
 
-    let msg = '';
-    if (stdout.includes('Already up to date.')) {
-      msg = '🫟 *Estado:* Todo está actualizado';
-    } else {
-      msg = `🕸 Todo fué actualizado correctamente.`;
-    }
-
-    conn.sendMessage(m.chat, { text: msg }, { quoted: m });
-  });
-};
-
-handler.help = ['update'];
-handler.tags = ['owner'];
-handler.command = ['update'];
-handler.owner = true;
-
-export default handler;
+export default handler
