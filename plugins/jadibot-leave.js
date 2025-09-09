@@ -20,7 +20,7 @@ let handler = async (m, { conn, args }) => {
 };
 
 handler.help = ['leave'];
-handler.tags = ['socket'];
+handler.tags = ['jadibot'];
 handler.command = ['leave'];
 
 export default handler;
