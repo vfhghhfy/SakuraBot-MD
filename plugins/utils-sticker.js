@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
   const name = user.name;
   const text1 = `S'ᴛᴇʟʟᴀʀ 🧠 WᴀBᴏᴛ`;
   const text2 = `@${name}`;
-  let sticker = false;
+  let stiker = false;
 
   if (/image/.test(mime)) {
     const media = await quoted.download();
