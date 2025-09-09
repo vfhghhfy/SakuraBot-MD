@@ -6,7 +6,7 @@ const handler = async (m, { conn }) => {
     if (!who) return m.reply('🌾 Menciona al usuario que deseas degradar de administrador.');
 
     const groupMetadata = await conn.groupMetadata(m.chat);
-    const participant = groupMetadata.participants.find(participant => participant.id === who);
+    const participant = groupMetadata.participants.find(participant => participant.jid === who);
 
     if (!participant || !participant.admin) {
     return conn.reply(m.chat, `🌾 *@${who.split('@')[0]}* no es administrador del grupo!`, m, { mentions: [who] });
