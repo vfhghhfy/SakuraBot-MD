@@ -6,7 +6,6 @@ import fs, { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'
 import fetch from 'node-fetch'
 import ws from 'ws'
-import './plugins/_fake.js'
 
 const isNumber = x => typeof x === "number" && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
@@ -332,12 +331,12 @@ export async function handler(chatUpdate) {
     }
 }
 
-globalThis.dfail = (type, m, conn) => {
+global.dfail = (type, m, conn) => {
     const msg = {
         owner: `🕸 El comando *${comando}* solo puede ser ejecutado por mi Creador.`,
         moderation: `🕸 El comando *${comando}* solo puede ser ejecutado por los moderadores.`,
         admin: `🕸 El comando *${comando}* solo puede ser ejecutado por los Administradores del Grupo.`,
         botAdmin: `🕸 El comando *${comando}* solo puede ser ejecutado si el Socket es Administrador del Grupo.`
     }[type];
-    if (msg) return conn.reply(m.chat, msg, fake)
+    if (msg) return m.reply(msg)
 }
