@@ -177,6 +177,9 @@ fs.rmdirSync(pathSanJadiBot, { recursive: true })
 if (globalThis.db.data == null) loadDatabase()
 if (connection == `open`) {
 if (!globalThis.db.data?.users) loadDatabase()
+await joinChannels(sock)
+const isCode = /^(qr|code)$/.test(command)
+if (m && conn && isCode && commandFlags[m.sender]) {
 const method = state.creds?.pairingCode ? 'Código de 8 dígitos' : 'Código QR'
 let isWABusiness = sock.authState?.creds?.platform === 'smba' || sock.authState?.creds?.platform === 'smbi'
 const waType = isWABusiness ? 'Business' : 'Messenger'
@@ -194,9 +197,6 @@ let chtxt = ` ֯　ׅ🫗ֶ֟ㅤ *Usuario ›* ${userName}
 > *¡Conviértete en un sub-bot ahora, únete al grupo oficial!*\nhttps://stellarwa.xyz/sakura`
 
 let ppch = await sock.profilePictureUrl(m.sender, 'image').catch(_ => "https://stellarwa.xyz/files/1757206448404.jpeg")
-await joinChannels(sock)
-const isCode = /^(qr|code)$/.test(command)
-if (m && conn && chtxt && ppch && isCode && commandFlags[m.sender]) {
 await global.conn.sendMessage(my.ch5, { text: chtxt,
 contextInfo: { 
 externalAdReply: {
