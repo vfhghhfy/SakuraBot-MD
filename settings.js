@@ -12,7 +12,7 @@ global.botname = '🕸 SakuraBot-MD'
 global.namebot = '🥗 Sakura Bot'
 global.packname = '🐼 𝗦𝗮𝗸𝘂𝗿𝗮𝗕𝗼𝘁-𝗠𝗗'
 global.wm = '🌿 𝙎𝙖𝙠𝙪𝙧𝙖𝘽𝙤𝙩-𝙈𝘿'
-global.dev = '🕸 Powered By DevAlexJs.'
+global.dev = '© Pᴏᴡᴇʀᴇᴅ Bʏ DᴇᴠAʟᴇxJs.'
 
 global.banner = 'https://stellarwa.xyz/files/1757377941018.jpeg'
 global.icon = 'https://stellarwa.xyz/files/1757378468505.jpeg'
