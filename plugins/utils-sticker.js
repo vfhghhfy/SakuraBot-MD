@@ -17,10 +17,10 @@ let handler = async (m, { conn }) => {
 
   if (/image/.test(mime)) {
     const media = await quoted.download();
-      if (/webp/g.test(mime)) out = await webp2png(img)
-     else if (/image/g.test(mime)) out = await uploadImage(img)
-     else if (/video/g.test(mime)) out = await uploadFile(img)
-    if (typeof out !== 'string') out = await uploadImage(img)
+      if (/webp/g.test(mime)) out = await webp2png(media)
+     else if (/image/g.test(mime)) out = await uploadImage(media)
+     else if (/video/g.test(mime)) out = await uploadFile(media)
+    if (typeof out !== 'string') out = await uploadImage(media)
     stiker = await sticker(media, out, text1, text2)
     const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m)
     await fs.unlinkSync(stickerPath);
@@ -29,10 +29,10 @@ let handler = async (m, { conn }) => {
       return m.reply('🫗 El video no puede ser muy largo. Máximo 20 segundos.');
     }
     const media = await quoted.download();
-      if (/webp/g.test(mime)) out = await webp2png(img)
-     else if (/image/g.test(mime)) out = await uploadImage(img)
-     else if (/video/g.test(mime)) out = await uploadFile(img)
-    if (typeof out !== 'string') out = await uploadImage(img)
+      if (/webp/g.test(mime)) out = await webp2png(media)
+     else if (/image/g.test(mime)) out = await uploadImage(media)
+     else if (/video/g.test(mime)) out = await uploadFile(media)
+    if (typeof out !== 'string') out = await uploadImage(media)
     stiker = await sticker(media, aout, text1, text2)
     const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m)
     await new Promise(resolve => setTimeout(resolve, 2000));
