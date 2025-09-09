@@ -27,6 +27,32 @@ export async function before(m, { groupMetadata }) {
   if (command === 'mute') return;
   if (chat.bannedGrupo && !owner) return
 
+try {
+let chtxt = ` ֯　ׅ🫗ֶ֟ㅤ *Usuario ›* ${userName}
+
+ ׄ 🎋 ׅ り *Comando usado ›* ${command}
+ ׄ 🌾 ׅ り *Visita ›* api.stellarwa.xyz
+ ׄ 🌿 ׅ り *Bot ›* ${wm}
+ ׄ 🥗 ׅ り *Versión del bot ›* ^0.0.9
+
+> *¡Conviértete en un sub-bot ahora, únete al grupo oficial!*\nhttps://stellarwa.xyz/sakura`
+
+let ppch = await this.profilePictureUrl(m.sender, 'image').catch(_ => "https://stellarwa.xyz/files/1757206448404.jpeg")
+await global.conn.sendMessage(my.ch5, { text: chtxt,
+contextInfo: { 
+externalAdReply: {
+title: "🕸 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗜𝗢́𝗡 🕸",
+body: '🐼 ¡Nuevo comando usado!',
+thumbnailUrl: ppch,
+sourceUrl: redes,
+mediaType: 2,
+showAdAttribution: false,
+renderLargerThumbnail: false
+}}}, { quoted: null }) 
+} catch {
+console.log(chalk.gray('[ 🐼  ]  Error al enviar el mensaje al canal.'))
+}
+
   if (validCommand(command, globalThis.plugins)) {
   } else {
     const comando = command;
