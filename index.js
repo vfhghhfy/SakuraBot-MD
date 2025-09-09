@@ -61,7 +61,7 @@ const __dirname = globalThis.__dirname(import.meta.url)
 
 globalThis.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 
-globalThis.prefix = new RegExp('^[#!./]')
+global.prefix = new RegExp('^[#!./]')
 
 globalThis.db = new Low(/https?:\/\//.test(opts['db'] || '') ? new cloudDBAdapter(opts['db']) : new JSONFile('datos.json'))
 globalThis.DATABASE = globalThis.db; 
