@@ -37,6 +37,6 @@ let handler = async (m, { conn, text, args }) => {
 handler.tags = ['grupo'];
 handler.help = ['bot'];
 handler.command = ['bot'];
-handler.isAdmin = true;
+handler.admin = true;
 
 export default handler;
