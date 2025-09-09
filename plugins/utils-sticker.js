@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { sticker } from '../lib/sticker.js'
 
 let handler = async (m, { conn }) => {
   const quoted = m.quoted || m;
@@ -8,10 +9,11 @@ let handler = async (m, { conn }) => {
   const name = user.name;
   const text1 = `S'ᴛᴇʟʟᴀʀ 🧠 WᴀBᴏᴛ`;
   const text2 = `@${name}`;
+  let sticker = false;
 
   if (/image/.test(mime)) {
     const media = await quoted.download();
-    let stiker = await sticker(media, false, text1, text2)
+    stiker = await sticker(media, false, text1, text2)
     const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m)
     await fs.unlinkSync(stickerPath);
   } else if (/video/.test(mime)) {
@@ -19,7 +21,7 @@ let handler = async (m, { conn }) => {
       return m.reply('🫗 El video no puede ser muy largo. Máximo 20 segundos.');
     }
     const media = await quoted.download();
-    let stiker = await sticker(media, false, text1, text2)
+    stiker = await sticker(media, false, text1, text2)
     const stickerPath = conn.sendFile(m.chat, sticker, 'sticker.webp', '', m)
     await new Promise(resolve => setTimeout(resolve, 2000));
     await fs.unlinkSync(stickerPath);
