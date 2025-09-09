@@ -6,6 +6,7 @@ import fs, { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'
 import fetch from 'node-fetch'
 import ws from 'ws'
+import './plugins/_fake.js'
 
 const isNumber = x => typeof x === "number" && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
@@ -261,10 +262,6 @@ export async function handler(chatUpdate) {
                 }
                 if (plugin.owner && !isOwner) {
                     fail("owner", m, this)
-                    continue
-                }
-                if (plugin.moderation && !isModeration) {
-                    fail("moderation", m, this)
                     continue
                 } else if (plugin.botAdmin && !isBotAdmin) {
                     fail("botAdmin", m, this)
