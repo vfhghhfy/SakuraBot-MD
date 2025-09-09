@@ -5,7 +5,7 @@ var handler = async (m, { conn, participants, usedPrefix, command }) => {
    let texto = await m.mentionedJid
    let user = texto.length > 0 ? texto[0] : (m.quoted ? await m.quoted.sender : false)
     if (!user) {
-        return conn.reply(m.chat, 'ꕥ Etiqueta o menciona al usuario que quieras expulsar.', m);
+        return conn.reply(m.chat, '🕸 Etiqueta o menciona al usuario que quieras expulsar.', m);
     }
 
     const groupInfo = await conn.groupMetadata(m.chat);
