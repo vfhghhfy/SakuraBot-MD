@@ -89,7 +89,7 @@ export async function handler(chatUpdate) {
                     adminonly: false,
                     antilinks: true,
                     bannedGrupo: false
-                }
+                }}
                    
             const settings = globalThis.db.data.settings[this.user.jid]
             if (typeof settings !== "object") globalThis.db.data.settings[this.user.jid] = {}
