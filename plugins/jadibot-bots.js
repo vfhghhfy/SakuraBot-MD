@@ -11,13 +11,13 @@ async function handler(m, { conn: stars, usedPrefix }) {
 
   let users = [...uniqueUsers.values()]
 
-  let message = users.map((v, index) => `*${index + 1}.-* @${v.user.jid.replace(/[^0-9]/g, '')}\n>🕸 *Link »* https://wa.me/${v.user.jid.replace(/[^0-9]/g, '')}\n> 🌿 *Nombre »* ${v.user.name || '-'}`).join('\n\n')
+  let message = users.map((v, index) => `*${index + 1}.-* @${v.user.jid.replace(/[^0-9]/g, '')}\n> 🕸 *Link »* https://wa.me/${v.user.jid.replace(/[^0-9]/g, '')}\n> 🌿 *Nombre »* ${v.user.name || '-'}`).join('\n\n')
 
   let replyMessage = message.length === 0 ? '' : message
   let totalUsers = users.length
   let responseMessage = `*🕸 Total Sub-Bots »* ${totalUsers || '0'}\n\n${replyMessage.trim()}`.trim()
 
-  await stars.sendMessage(m.chat, { text: responseMessage, mentions: stars.parseMention(responseMessage) }, { quoted: m })
+  await stars.sendMessage(m.chat, { text: responseMessage, mentions: stars.parseMention(responseMessage), ...rcanal }, { quoted: m })
 }
 
 handler.command = ['sockets', 'bots']
