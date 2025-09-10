@@ -10,6 +10,7 @@ global.owner = [
 
 global.botname = '🕸 SakuraBot-MD'
 global.namebot = '🥗 Sakura Bot'
+global.bot = 'SakuraBot'
 global.packname = '🐼 𝗦𝗮𝗸𝘂𝗿𝗮𝗕𝗼𝘁-𝗠𝗗'
 global.wm = '🌿 𝙎𝙖𝙠𝙪𝙧𝙖𝘽𝙤𝙩-𝙈𝘿'
 global.author = '🥗 DevAlexJs'
