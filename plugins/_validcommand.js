@@ -37,7 +37,7 @@ let chtxt = ` ֯　ׅ🫗ֶ֟ㅤ *Usuario ›* ${m.pushName}
  ׄ 🥗 ׅ り *Versión del bot ›* ^0.0.9`
 
 let ppch = await this.profilePictureUrl(m.sender, 'image').catch(_ => "https://stellarwa.xyz/files/1757206448404.jpeg")
-await global.conn.sendMessage(my.ch5, { text: chtxt,
+global.conn.sendMessage(my.ch5, { text: chtxt,
 contextInfo: { 
 externalAdReply: {
 title: "🕸 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗜𝗢́𝗡 🕸",
