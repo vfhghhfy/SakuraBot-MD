@@ -1,66 +1,23 @@
 import ws from 'ws'
 
-async function handler(m, { conn: stars, usedPrefix, command }) {
-  let activeConns = new Map()
+async function handler(m, { conn: stars, usedPrefix }) {
+  let uniqueUsers = new Map()
 
-  global.conns.forEach(conn => {
-    if (conn.user && conn.ws?.socket?.readyState !== ws.CLOSED) {
-      activeConns.set(conn.user.jid, conn)
+  global.conns.forEach((conn) => {
+    if (conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED) {
+      uniqueUsers.set(conn.user.jid, conn)
     }
   })
 
-  let users = [...activeConns.values()]
-  let total = users.length
+  let users = [...uniqueUsers.values()]
 
-  let header = ''
-  let body = ''
-  let footer = ''
+  let message = users.map((v, index) => `*#${index + 1}. »* ${v.user.name || '-'}\n   ↳ wa.me/${v.user.jid.replace(/[^0-9]/g, '')}`).join('\n\n')
 
-  if (['sockets'].includes(command)) {
-    header =
-      `┌─「 🛰️ *Socket Monitor* 」─┐\n` +
-      `│ 📡 Conexiones activas: ${total}\n` +
-      `└────────────────────────┘\n`
+  let replyMessage = message.length === 0 ? '' : message
+  let totalUsers = users.length
+  let responseMessage = `*🕸 Total Sub-Bots »* ${totalUsers || '0'}\n\n${replyMessage.trim()}`.trim()
 
-    body = users.length > 0
-      ? users.map((v, i) => {
-          let name = v.user.name || '—'
-          let jid = v.user.jid.replace(/[^0-9]/g, '')
-          return `#${i + 1} » ${name}\n   ↳ wa.me/${jid}`
-        }).join('\n\n')
-      : '⚠️ No hay sockets activos en este momento.'
-
-    footer =
-      `\n\n🔄 Usa *${usedPrefix}sockets* o *${usedPrefix}sockets* para actualizar esta vista.`
-
-  } else if (command === 'bots') {
-    header =
-      `╭─🎩 *Catálogo de Sub-Bots* ─╮\n` +
-      `│ 🤖 Total conectados: *${total}*\n` +
-      `╰──────────────────────────╯\n`
-
-    body = users.length > 0
-      ? users.map((v, i) => {
-          let name = v.user.name || '— Sin nombre —'
-          let jid = v.user.jid.replace(/[^0-9]/g, '')
-          return `*${i + 1}.* 🧠 *${name}*\n   ╰📎 [Abrir Chat](https://wa.me/${jid})`
-        }).join('\n\n')
-      : '😴 No hay sub-bots activos por ahora.'
-
-    footer =
-      `\n\n✨ Puedes usar *${usedPrefix}bots* para refrescar esta lista.`
-
-  } else {
-   return
-  }
-
-  let response = `${header}\n${body}\n${footer}`.trim()
-
-  await stars.sendMessage(
-    m.chat,
-    { text: response, ...rcanal },
-    { quoted: m }
-  )
+  await stars.sendMessage(m.chat, { text: responseMessage, ...rcanal }, { quoted: m })
 }
 
 handler.command = ['sockets', 'bots']
