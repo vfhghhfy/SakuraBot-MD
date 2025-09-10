@@ -27,7 +27,6 @@ export async function before(m, { groupMetadata }) {
   if (command === 'mute') return;
   if (chat.bannedGrupo && !owner) return
 
-  if (validCommand(command, globalThis.plugins)) {
 try {
 let chtxt = ` ֯　ׅ🫗ֶ֟ㅤ *Usuario ›* ${m.pushName}
 
@@ -52,6 +51,7 @@ renderLargerThumbnail: false
 console.log(`[ 🐼  ]  Error al enviar el mensaje al canal.\n[ 🕸  ]  ${e}`)
 }
 
+  if (validCommand(command, globalThis.plugins)) {
   } else {
     const comando = command;
     await m.reply(`🕸 El comando *${comando}* no existe.\n> Usa *${usedPrefix}help* para ver la lista de comandos disponibles.`);
