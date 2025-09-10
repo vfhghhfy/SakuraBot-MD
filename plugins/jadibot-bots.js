@@ -15,7 +15,7 @@ async function handler(m, { conn: stars, usedPrefix }) {
   let message = users.map((v, index) => {
     let name = v.user.name || '— Sin nombre —'
     let link = `https://wa.me/${v.user.jid.replace(/[^0-9]/g, '')}`
-    return `*${index + 1}.* 🧩 *${name}*\n╰📎 *Contacto:* [Abrir Chat](${link})`
+    return `*${index + 1}.* 🧩 *${name}*\n╰📎 *Contacto »* ${link}`
   }).join('\n\n')
 
   let header = `╭─❖ 「 *Sub-Bots Activos* 」 ❖─╮\n│\n│ 🛰️ *Total conectados:* ${totalUsers}\n│\n╰───────────────╯\n\n`
