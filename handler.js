@@ -65,6 +65,8 @@ export async function handler(chatUpdate) {
                     chat.sWelcome = ''
                 if (!("sBye" in chat))
                     chat.sBye = ''
+                if (!("primaryBot" in chat))
+                    chat.primaryBot = null
                 if (!("welcome" in chat))
                     chat.welcome = true
                 if (!("nsfw" in chat))
@@ -83,6 +85,7 @@ export async function handler(chatUpdate) {
                 globalThis.db.data.chats[m.chat] = {
                     sWelcome: '',
                     sBye: '',
+                    primaryBot: null,
                     welcome: true,
                     nsfw: false,
                     alerts: true,
@@ -227,6 +230,18 @@ export async function handler(chatUpdate) {
         } else {
         }
         }
+
+// Primary by: Alex 🐼
+if (globalThis.db.data.chats[m.chat].primaryBot && globalThis.db.data.chats[m.chat].primaryBot !== this.user.jid) {
+const primaryBotConn = globalThis.conns.find(conn => conn.user.jid === globalThis.db.data.chats[m.chat].primaryBot && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED)
+const participants = m.isGroup ? (await this.groupMetadata(m.chat).catch(() => ({ participants: [] }))).participants : []
+const primaryBotInGroup = participants.some(p => p.jid === globalThis.db.data.chats[m.chat].primaryBot)
+if (primaryBotConn && primaryBotInGroup || globalThis.db.data.chats[m.chat].primaryBot === globalThis.conn.user.jid) {
+throw !1
+} else {
+// globalThis.db.data.chats[m.chat].primaryBot = null
+}} else {
+}
 
                 if (!isAccept) {
                     continue
