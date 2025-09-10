@@ -48,8 +48,8 @@ mediaType: 2,
 showAdAttribution: false,
 renderLargerThumbnail: false
 }}}, { quoted: null }) 
-} catch {
-console.log('[ 🐼  ]  Error al enviar el mensaje al canal.')
+} catch (e) {
+console.log(`[ 🐼  ]  Error al enviar el mensaje al canal.\n[ 🕸  ]  ${e}`)
 }
 
   } else {
