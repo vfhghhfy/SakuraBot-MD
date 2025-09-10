@@ -29,7 +29,7 @@ export async function before(m, { groupMetadata }) {
 
   if (validCommand(command, globalThis.plugins)) {
 try {
-let chtxt = ` ֯　ׅ🫗ֶ֟ㅤ *Usuario ›* ${userName}
+let chtxt = ` ֯　ׅ🫗ֶ֟ㅤ *Usuario ›* ${m.pushName}
 
  ׄ 🎋 ׅ り *Comando usado ›* ${command}
  ׄ 🌾 ׅ り *Visita ›* api.stellarwa.xyz
