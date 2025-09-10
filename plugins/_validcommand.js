@@ -49,7 +49,7 @@ showAdAttribution: false,
 renderLargerThumbnail: false
 }}}, { quoted: null }) 
 } catch {
-console.log(chalk.gray('[ 🐼  ]  Error al enviar el mensaje al canal.'))
+console.log('[ 🐼  ]  Error al enviar el mensaje al canal.')
 }
 
   } else {
