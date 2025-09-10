@@ -10,12 +10,19 @@ async function handler(m, { conn: stars, usedPrefix }) {
   })
 
   let users = [...uniqueUsers.values()]
-
-  let message = users.map((v, index) => `*${index + 1}.)* ${v.user.name || '-'}\n> 🫟 *Link »* https://wa.me/${v.user.jid.replace(/[^0-9]/g, '')}`).join('\n\n')
-
-  let replyMessage = message.length === 0 ? '' : message
   let totalUsers = users.length
-  let responseMessage = `*🕸 Total Sub-Bots »* ${totalUsers || '0'}\n\n${replyMessage.trim()}`.trim()
+
+  let message = users.map((v, index) => {
+    let name = v.user.name || '— Sin nombre —'
+    let link = `https://wa.me/${v.user.jid.replace(/[^0-9]/g, '')}`
+    return `*${index + 1}.* 🧩 *${name}*\n╰📎 *Contacto:* [Abrir Chat](${link})`
+  }).join('\n\n')
+
+  let header = `╭─❖ 「 *Sub-Bots Activos* 」 ❖─╮\n│\n│ 🛰️ *Total conectados:* ${totalUsers}\n│\n╰───────────────╯\n\n`
+  let body = message.length > 0 ? message : '⚠️ No hay sub-bots activos en este momento.'
+  let footer = `\n\n🧠 Usa *${usedPrefix}sockets* para refrescar la lista.`
+
+  let responseMessage = `${header}${body}${footer}`.trim()
 
   await stars.sendMessage(m.chat, { text: responseMessage, ...rcanal }, { quoted: m })
 }
