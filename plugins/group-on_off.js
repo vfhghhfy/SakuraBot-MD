@@ -64,6 +64,6 @@ handler.help = ['on', 'off'];
 handler.tags = ['group'];
 handler.command = ['on', 'off'];
 handler.admin = true;
-handler.botAdmin = true;
+// handler.botAdmin = true;
 
 export default handler;
