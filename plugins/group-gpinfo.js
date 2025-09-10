@@ -11,7 +11,7 @@ const handler = async (m, { conn, groupMetadata }) => {
 
     const chatId = m.chat;
     const chat = globalThis.db.data.chats[chatId] || {};
-    const chatUsers = chat.users || {};
+    const chatUsers = global.db.data.users || {};
 
     groupMetadata.participants.forEach(participant => {
         const user = chatUsers[participant.id];
