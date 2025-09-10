@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
-  const mentioned = m.mentionedJid;
-  const who = mentioned[0] ? mentioned[0] : m.quoted ? m.quoted.sender : null;
+   let texto = await m.mentionedJid
+   let who = texto.length > 0 ? texto[0] : (m.quoted ? await m.quoted.sender : false)
 
   if (!who) {
     return m.reply('🫟 Etiqueta o responde al usuario del que quieras ver su foto de perfil.');
