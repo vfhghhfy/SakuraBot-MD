@@ -8,7 +8,6 @@ const handler = async (m, { conn, groupMetadata }) => {
 
     let totalCoins = 0;
     let registeredUsersInGroup = 0;
-    let totalClaimedWaifus = 0;
 
     const chatId = m.chat;
     const chat = globalThis.db.data.chats[chatId] || {};
@@ -19,8 +18,6 @@ const handler = async (m, { conn, groupMetadata }) => {
         if (user) {
             registeredUsersInGroup++;
             totalCoins += user.chocolates || 0;
-            const personagens = user.characters || [];
-            totalClaimedWaifus += personagens.length;
         }
     });
 
