@@ -207,7 +207,7 @@ console.log(chalk.green.bold(`
 }
         if (connection === "open") {
         await joinChannels(conn)
-        // await startSub()
+        await startSub()
  console.log(chalk.bold.greenBright('\n✩ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ 𝗢𝗡𝗟𝗜𝗡𝗘 ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✩\n│\n│★ CONEXIÓN EXITOSA CON WHATSAPP 🌷\n│\n✩ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ ✅  ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✩'))
         }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
@@ -264,9 +264,6 @@ conn.ev.on('creds.update', conn.credsUpdate)
 isInit = false
 return true
 };
-
-// <--• AutoConexión (Básico) •-->
-await startSub();
 
 process.on('unhandledRejection', (reason, promise) => {
   console.error("Rechazo no manejado detectado:", reason);
