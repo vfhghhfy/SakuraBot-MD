@@ -7,13 +7,13 @@
 
 ---
 
-## Descripción 
+## 🪻 Descripción 
 
 Sakura Bot es un bot de WhatsApp multifuncional basado en `baileys`. Este bot ofrece una variedad de características para mejorar tu experiencia en WhatsApp.
 
 ---
 
-## Características
+## 🪻 Características
 
 - Respuestas automáticas
 - Gestión de grupos
@@ -22,7 +22,7 @@ Sakura Bot es un bot de WhatsApp multifuncional basado en `baileys`. Este bot of
 
 ---
 
-## Instalación
+## 🪼 Instalación mediante Termux
 
 1. Clona el repositorio:
     ```sh
@@ -45,7 +45,7 @@ Sakura Bot es un bot de WhatsApp multifuncional basado en `baileys`. Este bot of
     ```
 2. Escanea el código QR con tu aplicación de WhatsApp para conectar el bot.
 
-## Contribuciones
+## 🪻 Contribuciones
 
 Si deseas contribuir, por favor sigue los siguientes pasos:
 
@@ -57,7 +57,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 
 ---
 
-#### Patrocinadores del Proyecto
+#### 🫛 Patrocinadores del Proyecto
 
 <details>
 <summary><strong>☁️ Sky Ultra Plus</strong> — Hosting</summary>
@@ -68,7 +68,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
   </a>
 </div>
 
-### Enlaces Oficiales
+### 🌱 Enlaces Oficiales
 | Servicio | Enlace |
 |------------|-----------|
 | Página Oficial | [Visitar](https://skyultraplus.com) |
@@ -76,7 +76,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 | Panel de Control | [Abrir](https://panel.skyultraplus.com) |
 | Estado de Servicios | [Ver](https://skyultraplus.com/estado)
 
-### Comunidad y Contacto
+### 👥 Comunidad y Contacto
 | Canal / Chat | Enlace |
 |------------------|-----------|
 | WhatsApp Canal | [Unirse](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g) |
@@ -89,25 +89,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 
 ---
 
-## Grupo Oficial del Bot
-
-<img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43">
-
-- Grupo oficial del Bot
-  * [Únete al grupo](https://stellarwa.xyz/sakura)
-
----
-
-## Propietario del Bot
-
-<div align="center">
-  <h3 align="center">Propietario del Bot</h3>
-  <a href="https://github.com/DevAlexJs">
-    <img src="https://github.com/DevAlexJs.png" width="300" height="300" alt="Alex"/>
-  </a>
-  <p>© Powered By Night Light</p>
-</div>
-
-## Licencia
-
-Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
+### 🐼 DESARROLLADORES
+<a href="https://github.com/DevAlexJs/SakuraBot-MD/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=DevAlexJs/SakuraBot-MD" /> 
+</a>
