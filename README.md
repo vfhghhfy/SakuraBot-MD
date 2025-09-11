@@ -150,3 +150,9 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 <a href="https://github.com/DevAlexJs/SakuraBot-MD/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=DevAlexJs/SakuraBot-MD" /> 
 </a>
+
+### 🫛 AGRADECIMIENTO 
+[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino) 
+
+### ⭐ PROPIETARIO
+[![Alexius](https://github.com/DevAlexJs.png?size=100)](https://github.com/DevAlexJs) 
