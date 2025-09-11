@@ -81,7 +81,8 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 |------------------|-----------|
 | WhatsApp Canal | [Unirse](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g) |
 | WhatsApp Grupo | [Unirse](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
-| Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) | GataDios | [WhatsApp](https://wa.me/message/B3KTM5XN2JMRD1) |
+| Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) |
+| GataDios | [WhatsApp](https://wa.me/message/B3KTM5XN2JMRD1) |
 | Russell | [WhatsApp](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0) 
 
 </details>
