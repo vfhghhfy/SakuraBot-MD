@@ -51,6 +51,38 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 4. Empuja tu rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
+## Patrocinadores del Proyecto
+
+<details>
+<summary><strong>☁️ Sky Ultra Plus</strong> — Hosting Basico</summary>
+
+<div align="center">
+  <a href="https://skyultraplus.com">
+    <img src="https://qu.ax/wbJoB.png" alt="Sky Ultra Plus Logo" height="125px">
+  </a>
+</div>
+
+### Enlaces Rápidos
+| Servicio | Enlace |
+|------------|-----------|
+| Página Oficial | [Visitar](https://skyultraplus.com) |
+| Dashboard | [Acceder](https://dash.skyultraplus.com) |
+| Panel de Control | [Abrir](https://panel.skyultraplus.com) |
+| Estado de Servicios | [Ver](https://skyultraplus.com/estado) |
+
+### Comunidad y Contacto
+| Canal / Chat | Enlace |
+|------------------|-----------|
+| WhatsApp Canal | [Unirse](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g) |
+| WhatsApp Grupo | [Entrar](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
+| Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) |
+
+### Contactos Directos
+- [Gata Dios](https://wa.me/message/B3KTM5XN2JMRD1)
+- [Russell](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0)
+
+</details>
+
 ## Grupo Oficial del Bot
 
 <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43">
