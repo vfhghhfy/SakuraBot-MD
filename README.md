@@ -11,12 +11,16 @@
 
 Sakura Bot es un bot de WhatsApp multifuncional basado en `baileys`. Este bot ofrece una variedad de características para mejorar tu experiencia en WhatsApp.
 
+---
+
 ## Características
 
 - Respuestas automáticas
 - Gestión de grupos
 - Juegos interactivos
 - Integración con APIs externas
+
+---
 
 ## Instalación
 
@@ -51,7 +55,9 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 4. Empuja tu rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
-## Patrocinadores del Proyecto
+--
+
+#### Patrocinadores del Proyecto
 
 <details>
 <summary><strong>☁️ Sky Ultra Plus</strong> — Hosting Basico</summary>
@@ -77,11 +83,17 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 | WhatsApp Grupo | [Entrar](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
 | Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) |
 
-### Contactos Directos
-- [Gata Dios](https://wa.me/message/B3KTM5XN2JMRD1)
-- [Russell](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0)
+---
+
+### Contactos
+| Chat | Enlace |
+|------------------|-----------|
+| GataDios | [Chat](https://wa.me/message/B3KTM5XN2JMRD1) |
+| Russell | [Chat](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0) 
 
 </details>
+
+---
 
 ## Grupo Oficial del Bot
 
@@ -90,6 +102,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 - Grupo oficial del Bot
   * [Únete al grupo](https://stellarwa.xyz/sakura)
 
+---
 
 ## Propietario del Bot
 
