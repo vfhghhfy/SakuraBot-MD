@@ -7,6 +7,18 @@
 
 ---
 
+## Api Stellar
+
+### Enlaces
+| Servicio | Enlace |
+|------------|-----------|
+| Página Oficial | [Visitar](https://stellarwa.xyz) |
+| Api | [Abrir](https://api.stellarwa.xyz) |
+| Shop | [Abrir](https://api.stellarwa.xyz/store) |
+| Estado de Servicios | [Ver](https://api.stellarwa.xyz/status)
+
+---
+
 ## Descripción 
 
 Sakura Bot es un bot de WhatsApp multifuncional basado en `baileys`. Este bot ofrece una variedad de características para mejorar tu experiencia en WhatsApp.
@@ -68,7 +80,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
   </a>
 </div>
 
-### Enlaces Rápidos
+### Enlaces Oficiales
 | Servicio | Enlace |
 |------------|-----------|
 | Página Oficial | [Visitar](https://skyultraplus.com) |
