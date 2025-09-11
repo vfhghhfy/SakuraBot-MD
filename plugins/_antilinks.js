@@ -11,7 +11,7 @@ const isGroupLink = linkRegex.test(m.text)
 const hasAllowedLink = allowedLinks.some(link => m.text.includes(link))
 if (hasAllowedLink) return
 
-if (chat.antilinks && isGroupLink && !isAdmin && isBotAdmin && !isModeration && m.key.participant !== botId) {
+if (chat.antilinks && isGroupLink && !isAdmin && isBotAdmin && !isModeration && m.key.participant !== conn.user.jid) {
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
 await conn.reply(m.chat, `*${globalThis.db.data.users[m.key.participant].name}* eliminado por \`Anti-Link\``, m)
 await conn.groupParticipantsUpdate(m.chat, [m.key.participant], 'remove')
