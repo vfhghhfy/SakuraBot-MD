@@ -1,9 +1,18 @@
-> ⭐ Versión : **^0.0.9**
+> [!IMPORTANT]
+> **Este proyecto está en constante evolución. Estamos comprometidos en ofrecer a nuestra comunidad un Bot increíble. Te invitamos a instalarlo y para estar al tanto de todas las novedades. [¡Únete a nuestro nuevo canal!](https://whatsapp.com/channel/0029VatPwXw7Noa8n1Vinx3g)**
 
-<h1 align="center">🕸 SakuraBot-MD</h1>
-<p align="center">
-    <img src="https://stellarwa.xyz/files/1757378468505.jpeg">
+<p align="center"> 
+<img src="https://files.catbox.moe/ixhyq3.png" alt="GataBot-MD" style="width: 75%; height: auto; max-width: 100px;">
+
+<p align="center"> 
+<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/¡Disfruta de un Bot totalmente gratuito, con múltiples funciones y de código abierto! -purple?colorA=%239b33b0&colorB=%231c007b&style=for-the-badge"></a> 
 </p>
+<div align="center">
+
+[![SakuraBot_Accounts](https://img.shields.io/badge/SakuraBot_Accounts-af57f1?style=for-the-badge&logo=biolink&logoColor=white)](https://stellarwa.xyz)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:stellarwa.help@gmail.com)
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](chairez120)
+</div>
 
 ---
 
