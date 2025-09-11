@@ -113,7 +113,7 @@ export async function handler(chatUpdate) {
         const user = globalThis.db.data.users[m.sender]
         const chat = globalThis.db.data.chats[m.chat]
         globalThis.setting = globalThis.db.data.settings[this.user.jid]
-        const isOwner = [...globalThis.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
+        const isOwner = [...globalThis.owner.map((number) => number)].map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
         if (opts["queque"] && m.text && !(isMods)) {
             const queque = this.msgqueque, time = 1000 * 5
             const previousID = queque[queque.length - 1]
