@@ -1,66 +1,73 @@
-> ⭐ Versión : **^0.0.9**
+> 🌸 Versión: **^0.0.9**
 
-<h1 align="center">🕸 SakuraBot-MD</h1>
+<h1 align="center">🕸️ SakuraBot-MD</h1>
 <p align="center">
-    <img src="https://stellarwa.xyz/files/1757378468505.jpeg">
+  <img src="https://stellarwa.xyz/files/1757378468505.jpeg" alt="SakuraBot Banner">
 </p>
 
 ---
 
-## Descripción 
+## 🧠 Descripción
 
-Sakura Bot es un bot de WhatsApp multifuncional basado en `baileys`. Este bot ofrece una variedad de características para mejorar tu experiencia en WhatsApp.
-
----
-
-## Características
-
-- Respuestas automáticas
-- Gestión de grupos
-- Juegos interactivos
-- Integración con APIs externas
+**SakuraBot-MD** es un bot multifuncional para WhatsApp basado en `baileys`, diseñado para ofrecer una experiencia rica, divertida y automatizada. Ideal para comunidades, grupos y usuarios que buscan interacción avanzada.
 
 ---
 
-## Instalación
+## 🚀 Características Destacadas
 
-1. Clona el repositorio:
-    ```sh
-    git clone https://github.com/DevAlexJs/SakuraBot-MD.git
-    ```
-2. Navega al directorio del proyecto:
-    ```sh
-    cd SakuraBot-MD
-    ```
-3. Instala las dependencias:
-    ```sh
-    npm install
-    ```
-
-## Uso
-
-1. Inicia el bot:
-    ```sh
-    npm run start
-    ```
-2. Escanea el código QR con tu aplicación de WhatsApp para conectar el bot.
-
-## Contribuciones
-
-Si deseas contribuir, por favor sigue los siguientes pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva funcionalidad'`).
-4. Empuja tu rama (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
+- 🤖 Respuestas automáticas personalizadas  
+- 👥 Gestión avanzada de grupos  
+- 🎮 Juegos interactivos y dinámicos  
+- 🌐 Integración con APIs externas  
+- 📦 Modularidad para desarrolladores  
+- 🔒 Seguridad y control de comandos  
 
 ---
 
-#### Patrocinadores del Proyecto
+## ⚙️ Instalación Rápida
+
+```sh
+git clone https://github.com/DevAlexJs/SakuraBot-MD.git
+cd SakuraBot-MD
+npm install
+```
+
+---
+
+## ▶️ Uso
+
+```sh
+npm run start
+```
+
+Luego escanea el **código QR** con tu WhatsApp para vincular el bot.
+
+---
+
+## 🤝 Contribuciones
+
+¿Quieres mejorar SakuraBot? Sigue estos pasos:
+
+```sh
+# 1. Haz fork del repositorio
+# 2. Crea una nueva rama
+git checkout -b feature/nueva-funcionalidad
+
+# 3. Realiza tus cambios
+git commit -m "Agrega nueva funcionalidad"
+
+# 4. Empuja tu rama
+git push origin feature/nueva-funcionalidad
+
+# 5. Abre un Pull Request
+```
+
+---
+
+## 💎 Patrocinadores del Proyecto
 
 <details>
-<summary><strong>☁️ Sky Ultra Plus</strong> — Hosting</summary>
+<summary><strong>☁️ Sky Ultra Plus</strong> — Hosting Premium</summary>
 
 <div align="center">
   <a href="https://skyultraplus.com">
@@ -68,52 +75,57 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
   </a>
 </div>
 
-### Enlaces Rápidos
-| Servicio | Enlace |
+### 🔗 Enlaces Rápidos
+| 🛠️ Servicio | 🌐 Enlace |
 |------------|-----------|
-| Página Oficial | [Visitar](https://skyultraplus.com) |
-| Dashboard | [Abrir](https://dash.skyultraplus.com) |
-| Panel de Control | [Abrir](https://panel.skyultraplus.com) |
-| Estado de Servicios | [Ver](https://skyultraplus.com/estado) |
+| 🏠 Página Oficial | [Visitar](https://skyultraplus.com) |
+| 📊 Dashboard | [Abrir](https://dash.skyultraplus.com) |
+| 🧰 Panel de Control | [Abrir](https://panel.skyultraplus.com) |
+| 📡 Estado de Servicios | [Ver](https://estado.skyultraplus.com) |
 
-### Comunidad y Contacto
-| Canal / Chat | Enlace |
+### 📱 Comunidad y Contacto
+| 🗣️ Canal / Chat | 🔗 Enlace |
 |------------------|-----------|
-| WhatsApp Canal | [Unirse](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g) |
-| WhatsApp Grupo | [Unirse](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
-| Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) |
+| 📢 WhatsApp Canal | [Unirse](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g) |
+| 💬 WhatsApp Grupo | [Unirse](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
+| 🧑‍💻 Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) |
 
----
-
-### Contactos
-| Chat | Enlace |
-|------------------|-----------|
-| GataDios | [WhatsApp](https://wa.me/message/B3KTM5XN2JMRD1) |
-| Russell | [WhatsApp](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0) 
+### 👥 Contactos Directos
+- 🐱 [Gata Dios](https://wa.me/message/B3KTM5XN2JMRD1)  
+- 📞 [Russell](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0)  
+- 🎭 [elrebelde21](https://facebook.com/elrebelde21)
 
 </details>
 
 ---
 
-## Grupo Oficial del Bot
+## 🌐 Grupo Oficial del Bot
 
-<img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43">
+<div align="center">
+  <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="120">
+</div>
 
-- Grupo oficial del Bot
-  * [Únete al grupo](https://stellarwa.xyz/sakura)
+- 💬 [Únete al grupo oficial](https://stellarwa.xyz/sakura)
 
 ---
 
-## Propietario del Bot
+## 👑 Propietario del Bot
 
 <div align="center">
-  <h3 align="center">Propietario del Bot</h3>
+  <h3>Alex — DevAlexJs</h3>
   <a href="https://github.com/DevAlexJs">
-    <img src="https://github.com/DevAlexJs.png" width="300" height="300" alt="Alex"/>
+    <img src="https://github.com/DevAlexJs.png" width="200" height="200" alt="Alex GitHub Avatar"/>
   </a>
-  <p>© Powered By Night Light</p>
+  <p>© Powered by <strong>Night Light</strong></p>
 </div>
 
-## Licencia
+---
 
-Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
+## 📜 Licencia
+
+Distribuido bajo la licencia MIT.  
+Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+> 🧩 ¿Quieres integrar más hostings, módulos o dashboards? Puedo ayudarte a modularizarlo aún más o crear una versión visual para presentación o landing. Solo dime el estilo que buscas.
