@@ -7,12 +7,6 @@
 <p align="center"> 
 <a href="#"><img title="SakuraBot-MD" src="https://img.shields.io/badge/¡Disfruta de un Bot totalmente gratuito, con múltiples funciones y de código abierto! -purple?colorA=%239b33b0&colorB=%231c007b&style=for-the-badge"></a> 
 </p>
-<div align="center">
-
-[![SakuraBot_Accounts](https://img.shields.io/badge/SakuraBot_Accounts-af57f1?style=for-the-badge&logo=biolink&logoColor=white)](https://stellarwa.xyz)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:stellarwa.help@gmail.com)
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](chairez120)
-</div>
 
 ---
 
