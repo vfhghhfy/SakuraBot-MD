@@ -55,12 +55,12 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 4. Empuja tu rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
---
+---
 
 #### Patrocinadores del Proyecto
 
 <details>
-<summary><strong>☁️ Sky Ultra Plus</strong> — Hosting Basico</summary>
+<summary><strong>☁️ Sky Ultra Plus</strong> — Hosting</summary>
 
 <div align="center">
   <a href="https://skyultraplus.com">
@@ -72,7 +72,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 | Servicio | Enlace |
 |------------|-----------|
 | Página Oficial | [Visitar](https://skyultraplus.com) |
-| Dashboard | [Acceder](https://dash.skyultraplus.com) |
+| Dashboard | [Abrir](https://dash.skyultraplus.com) |
 | Panel de Control | [Abrir](https://panel.skyultraplus.com) |
 | Estado de Servicios | [Ver](https://skyultraplus.com/estado) |
 
@@ -80,7 +80,7 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 | Canal / Chat | Enlace |
 |------------------|-----------|
 | WhatsApp Canal | [Unirse](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g) |
-| WhatsApp Grupo | [Entrar](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
+| WhatsApp Grupo | [Unirse](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
 | Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) |
 
 ---
@@ -88,8 +88,8 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 ### Contactos
 | Chat | Enlace |
 |------------------|-----------|
-| GataDios | [Chat](https://wa.me/message/B3KTM5XN2JMRD1) |
-| Russell | [Chat](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0) 
+| GataDios | [WhatsApp](https://wa.me/message/B3KTM5XN2JMRD1) |
+| Russell | [WhatsApp](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0) 
 
 </details>
 
