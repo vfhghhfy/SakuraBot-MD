@@ -105,23 +105,13 @@ cd && cd SakuraBot-MD && rm -rf sessions/session-bot && npm run code
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/DevAlexJs/SakuraBot-MD/master/update.sh | bash 
 ```
-#### Para que no pierda su progreso en SakuraBot, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
+#### Para que no pierda su progreso en SakuraBot, estos comandos realizarán un respaldo de su `datos.json` y se agregará a la versión más reciente.
 > *Estos comandos solo funcionan para TERMUX, REPLIT, LINUX*
 </details>
 
-## 🪻 Contribuciones
-
-Si deseas contribuir, por favor sigue los siguientes pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva funcionalidad'`).
-4. Empuja tu rama (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
-
 ---
 
-#### 🫛 Patrocinadores del Proyecto
+### Patrocinadores del Proyecto
 
 <details>
 <summary><strong>☁️ Sky Ultra Plus</strong> — Hosting</summary>
