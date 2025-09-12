@@ -114,38 +114,6 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 
 ---
 
-### Patrocinadores del Proyecto
-
-<details>
-<summary><strong>☁️ Sky Ultra Plus</strong> — Hosting</summary>
-
-<div align="center">
-  <a href="https://skyultraplus.com">
-    <img src="https://qu.ax/wbJoB.png" alt="Sky Ultra Plus Logo" height="125px">
-  </a>
-</div>
-
-### 🌱 Enlaces Oficiales
-| Servicio | Enlace |
-|------------|-----------|
-| Página Oficial | [Visitar](https://skyultraplus.com) |
-| Dashboard | [Abrir](https://dash.skyultraplus.com) |
-| Panel de Control | [Abrir](https://panel.skyultraplus.com) |
-| Estado de Servicios | [Ver](https://skyultraplus.com/estado)
-
-### 👥 Comunidad y Contacto
-| Canal / Chat | Enlace |
-|------------------|-----------|
-| WhatsApp Canal | [Unirse](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g) |
-| WhatsApp Grupo | [Unirse](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D) |
-| Discord | [SkyUltraPlus](https://discord.gg/6saUm5cw) |
-| GataDios | [WhatsApp](https://wa.me/message/B3KTM5XN2JMRD1) |
-| Russell | [WhatsApp](https://api.whatsapp.com/send/?phone=15167096032&text&type=phone_number&app_absent=0) 
-
-</details>
-
----
-
 ### 🫛 Colaboradores
 <a href="https://github.com/DevAlexJs/SakuraBot-MD/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=DevAlexJs/SakuraBot-MD" /> 
