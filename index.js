@@ -349,11 +349,11 @@ console.log(chalk.gray(`→ Archivos de la carpeta TMP eliminados`))
 console.log(chalk.gray(`→ Los archivos de la carpeta TMP no se pudieron eliminar`));
 }}, 30 * 1000) 
 
-/*setInterval(async () => {
+setInterval(async () => {
   if (stopped === 'close' || !conn || !conn?.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `${wm} | 🫛 Uptime: ${uptime}`;
+  const bio = `${packname} | 🫛 Uptime: ${uptime}`;
   await conn?.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
@@ -362,7 +362,7 @@ function clockString(ms) {
   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
   return [d, 'd ️', h, 'h ', m, 'm ', s, 's '].map((v) => v.toString().padStart(2, 0)).join('');
-}*/
+}
 
 _quickTest().catch(console.error)
 
