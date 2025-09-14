@@ -180,7 +180,7 @@ if (!globalThis.db.data?.users) loadDatabase()
 await joinChannels(sock)
 const isCode = /^(qr|code)$/.test(command)
 if (m && conn && isCode && commandFlags[m.sender]) {
-try {
+/*try {
 const method = state.creds?.pairingCode ? 'Código de 8 dígitos' : 'Código QR'
 let isWABusiness = sock.authState?.creds?.platform === 'smba' || sock.authState?.creds?.platform === 'smbi'
 const waType = isWABusiness ? 'Business' : 'Messenger'
@@ -211,7 +211,7 @@ renderLargerThumbnail: false
 }}}, { quoted: null }) 
 } catch {
 console.log(chalk.gray('[ 🐼  ]  Error al enviar el mensaje al canal.'))
-}
+}*/
 await conn.sendMessage(m.chat, {text: `🕸 Vinculaste con éxito un nuevo *Sub Bot*` }, { quoted: m })
 delete commandFlags[m.sender]
 }
